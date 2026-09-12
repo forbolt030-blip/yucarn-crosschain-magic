@@ -89,7 +89,7 @@ function CapabilityScroll() {
   useEffect(() => {
     const nodes = document.querySelectorAll<HTMLElement>("[data-capability]");
     const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
-      if (entry.isIntersecting) setActive(Number((entry.target as HTMLElement).dataset.capability));
+      if (entry.isIntersecting) setActive(Number((entry.target as HTMLElement).dataset["capability"]));
     }), { rootMargin: "-42% 0px -42% 0px" });
     nodes.forEach((node) => observer.observe(node));
     return () => observer.disconnect();
