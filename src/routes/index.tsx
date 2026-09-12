@@ -58,7 +58,7 @@ function Header() {
           <a href="#networks" className="transition-colors hover:text-primary">Networks</a>
           <a href="#how" className="transition-colors hover:text-primary">How it works</a>
         </nav>
-        <YucarnButton href="#start" variant="ink" className="hidden sm:inline-flex">Open Yucarn</YucarnButton>
+        <YucarnButton href="#start" variant="ink" className="hidden md:inline-flex">Open Yucarn</YucarnButton>
         <button type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center rounded-full border border-foreground/15 md:hidden">
           {open ? <X size={19} /> : <Menu size={19} />}
         </button>
